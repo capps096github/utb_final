@@ -12,3 +12,8 @@ function goToHome() {
 function goToFacilities() {
   location.href = "facilities.html";
 }
+
+// * Go to Districts
+function goToDistricts() {
+  location.href = "districts.html";
+}

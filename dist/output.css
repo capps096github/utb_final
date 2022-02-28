@@ -804,6 +804,56 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(29 78 216 / 0.1);
 }
 
+.bg-amber-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 158 11 / var(--tw-bg-opacity));
+}
+
+.bg-amber-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 191 36 / var(--tw-bg-opacity));
+}
+
+.bg-amber-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 211 77 / var(--tw-bg-opacity));
+}
+
+.bg-amber-400\/20{
+  background-color: rgb(251 191 36 / 0.2);
+}
+
+.bg-amber-400\/10{
+  background-color: rgb(251 191 36 / 0.1);
+}
+
+.bg-amber-400\/25{
+  background-color: rgb(251 191 36 / 0.25);
+}
+
+.bg-amber-500\/20{
+  background-color: rgb(245 158 11 / 0.2);
+}
+
+.bg-blue-500\/20{
+  background-color: rgb(59 130 246 / 0.2);
+}
+
+.bg-amber-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 243 199 / var(--tw-bg-opacity));
+}
+
+.bg-amber-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 230 138 / var(--tw-bg-opacity));
+}
+
+.bg-blue-600{
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+}
+
 .fill-current{
   fill: currentColor;
 }
@@ -1095,6 +1145,28 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:bg-blue-600:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-amber-100\/30:hover{
+  background-color: rgb(254 243 199 / 0.3);
+}
+
+.hover\:bg-amber-100:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 243 199 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-amber-400:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 191 36 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-amber-400\/70:hover{
+  background-color: rgb(251 191 36 / 0.7);
+}
+
+.hover\:bg-amber-400\/90:hover{
+  background-color: rgb(251 191 36 / 0.9);
 }
 
 .hover\:text-blue-100:hover{

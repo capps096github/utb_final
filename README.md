@@ -5,11 +5,10 @@
 ![Dashboard](screenshots/dashboard.png)
 
 _Dashboard_
-![Dashboard](screenshots/pending.png)
+![Pending](screenshots/pending.png)
 
 _Dashboard_
-![Dashboard](screenshots/star.png)
-
+![Star](screenshots/star.png)
 
 ## Description
 

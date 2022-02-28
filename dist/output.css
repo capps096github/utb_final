@@ -798,6 +798,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(59 130 246 / 0.2);
 }
 
+.bg-utb-green{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 166 81 / var(--tw-bg-opacity));
+}
+
+.bg-amber-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 230 138 / var(--tw-bg-opacity));
+}
+
+.bg-utb-green\/50{
+  background-color: rgb(0 166 81 / 0.5);
+}
+
+.bg-green-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(134 239 172 / var(--tw-bg-opacity));
+}
+
+.bg-blue-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(147 197 253 / var(--tw-bg-opacity));
+}
+
 .fill-current{
   fill: currentColor;
 }
@@ -1015,6 +1039,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(251 191 36 / var(--tw-text-opacity));
 }
 
+.text-utb-green{
+  --tw-text-opacity: 1;
+  color: rgb(0 166 81 / var(--tw-text-opacity));
+}
+
+.text-utb-blue{
+  --tw-text-opacity: 1;
+  color: rgb(7 114 186 / var(--tw-text-opacity));
+}
+
 .underline{
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -1111,6 +1145,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(30 64 175 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-utb-blue:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(7 114 186 / var(--tw-bg-opacity));
+}
+
 .hover\:text-blue-800:hover{
   --tw-text-opacity: 1;
   color: rgb(30 64 175 / var(--tw-text-opacity));
@@ -1119,6 +1158,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:text-white:hover{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-blue-600:hover{
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover{

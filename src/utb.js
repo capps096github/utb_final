@@ -22,3 +22,8 @@ function goToDistricts() {
 function goToEstablishmentType() {
   location.href = "establishment_types.html";
 }
+
+// * Go to Users
+function goToUsers() {
+  location.href = "users.html";
+}

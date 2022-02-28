@@ -2,12 +2,13 @@
 
 # This is a sample UI of the UTB Project
 
+_Dashboard_
 ![Dashboard](screenshots/dashboard.png)
 
-_Dashboard_
+_Pending_
 ![Pending](screenshots/pending.png)
 
-_Dashboard_
+_Star_
 ![Star](screenshots/star.png)
 
 ## Description

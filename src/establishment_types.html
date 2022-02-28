@@ -50,19 +50,6 @@
           <button onclick="goToFacilities()"
             class="inline-flex items-center hover:text-blue-800 hover:bg-amber-400 rounded-md font-semibold uppercase px-3 py-2 text-sm bg-transparent transition-colors duration-300 hover:border-blue-800/30">
             <!-- icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current" width="24px" height="24px"
-              viewBox="0 0 24 24">
-              <path
-                d="M23.961 8.429c-.831.982-1.614 1.918-1.961 3.775v6.683l-4 2.479v-9.161c-.347-1.857-1.13-2.793-1.961-3.775-.908-1.075-2.039-2.411-2.039-4.629l.019-.345-2.019-1.456-5.545 4-6.455-4v18l6.455 4 5.545-4 5.545 4 6.455-4v-11.618l-.039.047zm-12.961 9.826l-4 2.885v-13.067l4-2.886v13.068zm9-18.255c-2.1 0-4 1.702-4 3.801 0 3.121 3.188 3.451 4 8.199.812-4.748 4-5.078 4-8.199 0-2.099-1.9-3.801-4-3.801zm0 5.5c-.828 0-1.5-.671-1.5-1.5s.672-1.5 1.5-1.5 1.5.671 1.5 1.5-.672 1.5-1.5 1.5z" />
-            </svg>
-            <!-- text -->
-            <span class="ml-2">Facilities</span>
-          </button>
-
-          <!-- Establishment Types -->
-          <button onclick="goToEstablishmentType()"
-            class="inline-flex items-center text-blue-800 bg-amber-400 rounded-md font-semibold uppercase px-3 py-2 text-sm bg-transparent transition-colors duration-300 hover:border-blue-800/30">
-            <!-- icon -->
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current" enable-background="new 0 0 24 24"
               height="24px" viewBox="0 0 24 24" width="24px" fill="none">
               <g>
@@ -76,6 +63,26 @@
                     points="19.1,16 15,16 15,22 17,22 17,18 18.98,18 19,22 21,22 21,16.74 21.82,12.37 19.86,12" />
                 </g>
               </g>
+            </svg>
+            <!-- text -->
+            <span class="ml-2">Facilities</span>
+          </button>
+
+          <!-- Establishment Types -->
+          <!-- <button onclick="goToEstablishmentType()" class="inline-flex items-center text-blue-800 bg-amber-400 rounded-md font-semibold uppercase px-3 py-2
+            text-sm transition-colors duration-300"> -->
+          <button onclick="goToEstablishmentType()"
+            class="inline-flex items-center text-blue-800 bg-amber-400 rounded-md font-semibold uppercase px-3 py-2 text-sm  transition-colors duration-300 hover:border-blue-800/30">
+            <!-- icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current" height="24px" viewBox="0 0 24 24"
+              width="24px" fill="none">
+              <path d="M0 0h24v24H0z" fill="none" />
+              <circle cx="20" cy="12" r="2" />
+              <circle cx="4" cy="12" r="2" />
+              <circle cx="12" cy="20" r="2" />
+              <path
+                d="M10.05 8.59L6.03 4.55h-.01l-.31-.32-1.42 1.41 4.02 4.05.01-.01.31.32zm3.893.027l4.405-4.392L19.76 5.64l-4.405 4.393zM10.01 15.36l-1.42-1.41-4.03 4.01-.32.33 1.41 1.41 4.03-4.02zm9.75 2.94l-3.99-4.01-.36-.35L14 15.35l3.99 4.01.35.35z" />
+              <circle cx="12" cy="4" r="2" />
             </svg>
             <!-- text -->
             <span class="ml-2">Establishment Types</span>
@@ -98,21 +105,12 @@
           <!-- Districts -->
           <button onclick="goToDistricts()"
             class="inline-flex items-center hover:text-blue-800 hover:bg-amber-400 rounded-md font-semibold uppercase px-3 py-2 text-sm bg-transparent transition-colors duration-300 hover:border-blue-800/30">
-            <!-- icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current" enable-background="new 0 0 24 24"
-              height="24px" viewBox="0 0 24 24" width="24px" fill="none">
-              <g>
-                <rect fill="none" height="24" width="24" />
-              </g>
-              <g>
-                <g>
-                  <polygon points="22,9 12,2 2,9 11,9 11,22 13,22 13,9" />
-                  <polygon points="4.14,12 2.18,12.37 3,16.74 3,22 5,22 5.02,18 7,18 7,22 9,22 9,16 4.9,16" />
-                  <polygon
-                    points="19.1,16 15,16 15,22 17,22 17,18 18.98,18 19,22 21,22 21,16.74 21.82,12.37 19.86,12" />
-                </g>
-              </g>
-            </svg>
+              <!-- icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current" width="24px" height="24px"
+                viewBox="0 0 24 24">
+                <path
+                  d="M23.961 8.429c-.831.982-1.614 1.918-1.961 3.775v6.683l-4 2.479v-9.161c-.347-1.857-1.13-2.793-1.961-3.775-.908-1.075-2.039-2.411-2.039-4.629l.019-.345-2.019-1.456-5.545 4-6.455-4v18l6.455 4 5.545-4 5.545 4 6.455-4v-11.618l-.039.047zm-12.961 9.826l-4 2.885v-13.067l4-2.886v13.068zm9-18.255c-2.1 0-4 1.702-4 3.801 0 3.121 3.188 3.451 4 8.199.812-4.748 4-5.078 4-8.199 0-2.099-1.9-3.801-4-3.801zm0 5.5c-.828 0-1.5-.671-1.5-1.5s.672-1.5 1.5-1.5 1.5.671 1.5 1.5-.672 1.5-1.5 1.5z" />
+              </svg>
 
             <!-- text -->
             <span class="ml-2">Districts</span>

@@ -17,3 +17,8 @@ function goToFacilities() {
 function goToDistricts() {
   location.href = "districts.html";
 }
+
+// * Go to EstablishmentType
+function goToEstablishmentType() {
+  location.href = "establishment_types.html";
+}

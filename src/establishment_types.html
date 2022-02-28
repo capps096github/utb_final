@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- title -->
-    <title>UTB Districts</title>
+    <title>UTB Establishment Types</title>
 
     <!-- CSS -->
     <link href="/dist/output.css" rel="stylesheet" />
@@ -61,17 +61,21 @@
 
           <!-- Establishment Types -->
           <button onclick="goToEstablishmentType()"
-            class="inline-flex items-center hover:text-blue-800 hover:bg-amber-400 rounded-md font-semibold uppercase px-3 py-2 text-sm bg-transparent transition-colors duration-300 hover:border-blue-800/30">
+            class="inline-flex items-center text-blue-800 bg-amber-400 rounded-md font-semibold uppercase px-3 py-2 text-sm bg-transparent transition-colors duration-300 hover:border-blue-800/30">
             <!-- icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current" height="24px" viewBox="0 0 24 24"
-              width="24px" fill="none">
-              <path d="M0 0h24v24H0z" fill="none" />
-              <circle cx="20" cy="12" r="2" />
-              <circle cx="4" cy="12" r="2" />
-              <circle cx="12" cy="20" r="2" />
-              <path
-                d="M10.05 8.59L6.03 4.55h-.01l-.31-.32-1.42 1.41 4.02 4.05.01-.01.31.32zm3.893.027l4.405-4.392L19.76 5.64l-4.405 4.393zM10.01 15.36l-1.42-1.41-4.03 4.01-.32.33 1.41 1.41 4.03-4.02zm9.75 2.94l-3.99-4.01-.36-.35L14 15.35l3.99 4.01.35.35z" />
-              <circle cx="12" cy="4" r="2" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current" enable-background="new 0 0 24 24"
+              height="24px" viewBox="0 0 24 24" width="24px" fill="none">
+              <g>
+                <rect fill="none" height="24" width="24" />
+              </g>
+              <g>
+                <g>
+                  <polygon points="22,9 12,2 2,9 11,9 11,22 13,22 13,9" />
+                  <polygon points="4.14,12 2.18,12.37 3,16.74 3,22 5,22 5.02,18 7,18 7,22 9,22 9,16 4.9,16" />
+                  <polygon
+                    points="19.1,16 15,16 15,22 17,22 17,18 18.98,18 19,22 21,22 21,16.74 21.82,12.37 19.86,12" />
+                </g>
+              </g>
             </svg>
             <!-- text -->
             <span class="ml-2">Establishment Types</span>
@@ -90,9 +94,10 @@
             <span class="ml-2">Score Settings</span>
           </button>
 
+
           <!-- Districts -->
           <button onclick="goToDistricts()"
-            class="inline-flex items-center text-blue-800 bg-amber-400 rounded-md font-semibold uppercase px-3 py-2 text-sm bg-transparent transition-colors duration-300 hover:border-blue-800/30">
+            class="inline-flex items-center hover:text-blue-800 hover:bg-amber-400 rounded-md font-semibold uppercase px-3 py-2 text-sm bg-transparent transition-colors duration-300 hover:border-blue-800/30">
             <!-- icon -->
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current" enable-background="new 0 0 24 24"
               height="24px" viewBox="0 0 24 24" width="24px" fill="none">
@@ -108,9 +113,11 @@
                 </g>
               </g>
             </svg>
+
             <!-- text -->
             <span class="ml-2">Districts</span>
           </button>
+
 
           <!-- Reports -->
           <button onclick=""
@@ -156,84 +163,22 @@
         <!-- page title -->
         <h2
           class="text-5xl font-spartan text-center underline tracking-tight font-extrabold text-blue-800 sm:text-5xl md:text-6xl">
-          Districts
+          Establishment Type
         </h2>
 
         <!-- FAcilities Section -->
         <div class="space-y-5">
-          <div class="justify-between flex">
-            <!-- Put Buttons here -->
-            <div class="inline-flex space-x-2">
-              <!-- Print -->
-              <button onclick=""
-                class="inline-flex items-center border-2 border-red-600 bg-red-600/20 text-red-600 hover:bg-red-600 hover:border-red-600/30 hover:text-white rounded-md font-semibold uppercase px-3 py-2 text-sm transition-colors duration-300">
-                <!-- icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current" width="24" height="24"
-                  viewBox="0 0 24 24">
-                  <path
-                    d="M12.819 14.427c.064.267.077.679-.021.948-.128.351-.381.528-.754.528h-.637v-2.12h.496c.474 0 .803.173.916.644zm3.091-8.65c2.047-.479 4.805.279 6.09 1.179-1.494-1.997-5.23-5.708-7.432-6.882 1.157 1.168 1.563 4.235 1.342 5.703zm-7.457 7.955h-.546v.943h.546c.235 0 .467-.027.576-.227.067-.123.067-.366 0-.489-.109-.198-.341-.227-.576-.227zm13.547-2.732v13h-20v-24h8.409c4.858 0 3.334 8 3.334 8 3.011-.745 8.257-.42 8.257 3zm-12.108 2.761c-.16-.484-.606-.761-1.224-.761h-1.668v3.686h.907v-1.277h.761c.619 0 1.064-.277 1.224-.763.094-.292.094-.597 0-.885zm3.407-.303c-.297-.299-.711-.458-1.199-.458h-1.599v3.686h1.599c.537 0 .961-.181 1.262-.535.554-.659.586-2.035-.063-2.693zm3.701-.458h-2.628v3.686h.907v-1.472h1.49v-.732h-1.49v-.698h1.721v-.784z" />
-                </svg>
 
-                <!-- text -->
-                <span class="ml-2">Export PDF</span>
-              </button>
-
-              <!-- Print -->
-              <button onclick=""
-                class="inline-flex items-center border-2 border-green-700 bg-green-700/20 text-green-700 hover:bg-green-700 hover:border-green-700/30 hover:text-white rounded-md font-semibold uppercase px-3 py-2 text-sm transition-colors duration-300">
-                <!-- icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current" width="16" height="16"
-                  fill="currentColor" class="bi bi-file-earmark-spreadsheet-fill" viewBox="0 0 16 16">
-                  <path d="M6 12v-2h3v2H6z" />
-                  <path
-                    d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM3 9h10v1h-3v2h3v1h-3v2H9v-2H6v2H5v-2H3v-1h2v-2H3V9z" />
-                </svg>
-
-                <!-- text -->
-                <span class="ml-2">Export EXCEL</span>
-              </button>
-              <!-- Print -->
-
-              <button onclick=""
-                class="inline-flex items-center border-2 border-blue-800 bg-blue-800/20 text-blue-800 hover:bg-blue-800 hover:border-blue-800/30 hover:text-white rounded-md font-semibold uppercase px-3 py-2 text-sm transition-colors duration-300">
-                <!-- icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current" width="24" height="24"
-                  viewBox="0 0 24 24">
-                  <path
-                    d="M16 17h-8v-1h8v1zm8-12v13h-4.048c-.404 2.423-3.486 6-6.434 6h-9.518v-6h-4v-13h4v-5h16v5h4zm-18 0h12v-3h-12v3zm12 9h-12v8h6.691c3.469 0 2-3.352 2-3.352s3.309 1.594 3.309-2v-2.648zm4-7h-20v9h2v-4h16v4h2v-9zm-9 11h-5v1h5v-1zm7.5-10c-.276 0-.5.224-.5.5s.224.5.5.5.5-.224.5-.5-.224-.5-.5-.5z" />
-                </svg>
-
-                <!-- text -->
-                <span class="ml-2">Print Document</span>
-              </button>
-            </div>
-
-            <!-- Search -->
-            <!-- search field with an icon -->
-            <div class="inline-flex items-center justify-end">
-              <div class="max-w-xs bg-blue-800 p-2 rounded-md flex items-center" id="search" aria-expanded="false"
-                aria-haspopup="true">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-white" width="24" height="24"
-                  viewBox="0 0 24 24">
-                  <path
-                    d="M13 8h-8v-1h8v1zm0 2h-8v-1h8v1zm-3 2h-5v-1h5v1zm11.172 12l-7.387-7.387c-1.388.874-3.024 1.387-4.785 1.387-4.971 0-9-4.029-9-9s4.029-9 9-9 9 4.029 9 9c0 1.761-.514 3.398-1.387 4.785l7.387 7.387-2.828 2.828zm-12.172-8c3.859 0 7-3.14 7-7s-3.141-7-7-7-7 3.14-7 7 3.141 7 7 7z" />
-                </svg>
-              </div>
-
-              <input type="text" name="teacherid" placeholder="Search Anything by Name, Type, Grade"
-                class="text-blue-800 mt-1 ml-1 w-full px-3 py-2 bg-white border-2 border-blue-800 rounded-md text-sm shadow-sm placeholder-blue-800/50 focus:outline-none focus:border-black focus:ring-1 focus:ring-black" />
-            </div>
-          </div>
-
-          <!-- CReate new District button -->
+          <!-- CReate new Establishment Type button -->
           <a href="add_assignment.html"
             class="flex items-center justify-center w-full rounded-md uppercase text-sm font-semibold pl-2 pr-3 py-2 shadow-sm hover:text-white hover:bg-blue-800 text-blue-800 bg-amber-400 hover:no-underline px-5 transition-colors duration-300">
             <svg width="20" height="20" fill="currentColor" class="mr-2" aria-hidden="true">
               <path
                 d="M10 5a1 1 0 0 1 1 1v3h3a1 1 0 1 1 0 2h-3v3a1 1 0 1 1-2 0v-3H6a1 1 0 1 1 0-2h3V6a1 1 0 0 1 1-1Z" />
             </svg>
-            Create New District
+            Create New Establishment Type
           </a>
+
 
           <!-- Table -->
           <div class="flex flex-col">
@@ -353,7 +298,8 @@
             </div>
           </div>
           <!-- end table -->
-        </div>
+
+
       </main>
       <!-- end main -->
 

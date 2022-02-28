@@ -3,7 +3,12 @@ function goToScoreSettings() {
   location.href = "score_settings.html";
 }
 
-// * Go to Score Settings
+// * Go to Home Screen
 function goToHome() {
   location.href = "home.html";
+}
+
+// * Go to Facilities
+function goToFacilities() {
+  location.href = "facilities.html";
 }

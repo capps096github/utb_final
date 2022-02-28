@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- title -->
+    <title>UTB Home</title>
+
+    <!-- CSS -->
+    <link href="/dist/output.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="utb.js"></script>
+
+
+  </head>
+
+  <body class="bg-blue-100 font-spartan">
+    <!-- site layout -->
+    <section class="flex flex-col justify-between h-screen">
+      <!-- nav bar -->
+      <nav
+        class="font-lato md:flex md:justify-between lg:flex lg:justify-between md:px-2 px-2 py-2 sticky top-0 left-0 right-0 bg-blue-800 text-white drop-shadow-md shadow-black">
+        <!-- icon -->
+        <a href="./index.html" class="bg-amber-400  p-2 rounded-md">
+          <img src="../images/utb_noback.png" height="80px" width="100px" alt="logo" />
+        </a>
+
+        <!-- Actions -->
+        <div class="space-x-2 flex justify-center items-center mt-4 md:mt-0">
+          <!-- HOme -->
+          <button onclick="goToHome()" class="inline-flex items-center hover:text-blue-800 hover:bg-amber-400
+            rounded-md font-semibold uppercase px-3 py-2 text-sm transition-colors duration-300">
+            <!-- icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current" enable-background="new 0 0 24 24"
+              height="24px" viewBox="0 0 24 24" width="24px" fill="none">
+              <g>
+                <rect fill="none" height="24" width="24" />
+              </g>
+              <g>
+                <path d="M19,9.3V4h-3v2.6L12,3L2,12h3v8h5v-6h4v6h5v-8h3L19,9.3z M10,10c0-1.1,0.9-2,2-2s2,0.9,2,2H10z" />
+              </g>
+            </svg>
+            <!-- text -->
+            <span class="ml-2">Home</span>
+          </button>
+
+          <!-- Facilities -->
+          <button onclick="goToFacilities()" class="inline-flex items-center text-blue-800 bg-amber-400  rounded-md
+            font-semibold uppercase px-3 py-2 text-sm bg-transparent transition-colors duration-300
+            hover:border-blue-800/30">
+            <!-- icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current" enable-background="new 0 0 24 24"
+              height="24px" viewBox="0 0 24 24" width="24px" fill="none">
+              <g>
+                <rect fill="none" height="24" width="24" />
+              </g>
+              <g>
+                <g>
+                  <polygon points="22,9 12,2 2,9 11,9 11,22 13,22 13,9" />
+                  <polygon points="4.14,12 2.18,12.37 3,16.74 3,22 5,22 5.02,18 7,18 7,22 9,22 9,16 4.9,16" />
+                  <polygon
+                    points="19.1,16 15,16 15,22 17,22 17,18 18.98,18 19,22 21,22 21,16.74 21.82,12.37 19.86,12" />
+                </g>
+              </g>
+            </svg>
+            <!-- text -->
+            <span class="ml-2">Facilities</span>
+          </button>
+
+          <!-- Establishment Types -->
+          <button onclick=""
+            class="inline-flex items-center hover:text-blue-800 hover:bg-amber-400 rounded-md font-semibold uppercase px-3 py-2 text-sm bg-transparent transition-colors duration-300 hover:border-blue-800/30">
+            <!-- icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current" height="24px" viewBox="0 0 24 24"
+              width="24px" fill="none">
+              <path d="M0 0h24v24H0z" fill="none" />
+              <circle cx="20" cy="12" r="2" />
+              <circle cx="4" cy="12" r="2" />
+              <circle cx="12" cy="20" r="2" />
+              <path
+                d="M10.05 8.59L6.03 4.55h-.01l-.31-.32-1.42 1.41 4.02 4.05.01-.01.31.32zm3.893.027l4.405-4.392L19.76 5.64l-4.405 4.393zM10.01 15.36l-1.42-1.41-4.03 4.01-.32.33 1.41 1.41 4.03-4.02zm9.75 2.94l-3.99-4.01-.36-.35L14 15.35l3.99 4.01.35.35z" />
+              <circle cx="12" cy="4" r="2" />
+            </svg>
+            <!-- text -->
+            <span class="ml-2">Establishment Types</span>
+          </button>
+
+          <!-- Score Settings -->
+          <button onclick="goToScoreSettings()"
+            class="inline-flex items-center hover:text-blue-800 hover:bg-amber-400 rounded-md font-semibold uppercase px-3 py-2 text-sm bg-transparent transition-colors duration-300 hover:border-blue-800/30">
+            <!-- icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current" width="24px" height="24px"
+              viewBox="0 0 24 24">
+              <path
+                d="M19 2c1.654 0 3 1.346 3 3v14c0 1.654-1.346 3-3 3h-14c-1.654 0-3-1.346-3-3v-14c0-1.654 1.346-3 3-3h14zm5 3c0-2.761-2.238-5-5-5h-14c-2.762 0-5 2.239-5 5v14c0 2.761 2.238 5 5 5h14c2.762 0 5-2.239 5-5v-14zm-8 5c.552 0 1 .449 1 1s-.448 1-1 1-1-.449-1-1 .448-1 1-1zm0-2c-1.657 0-3 1.343-3 3s1.343 3 3 3 3-1.343 3-3-1.343-3-3-3zm-8 2c-1.657 0-3 1.343-3 3s1.343 3 3 3 3-1.343 3-3-1.343-3-3-3zm8-4c.343 0 .677.035 1 .101v-1.101c0-.552-.447-1-1-1s-1 .448-1 1v1.101c.323-.066.657-.101 1-.101zm-8 2c.343 0 .677.035 1 .101v-3.101c0-.552-.447-1-1-1s-1 .448-1 1v3.101c.323-.066.657-.101 1-.101zm8 8c-.343 0-.677-.035-1-.101v3.101c0 .552.447 1 1 1s1-.448 1-1v-3.101c-.323.066-.657.101-1 .101zm-8 2c-.343 0-.677-.035-1-.101v1.101c0 .552.447 1 1 1s1-.448 1-1v-1.101c-.323.066-.657.101-1 .101z" />
+            </svg>
+            <!-- text -->
+            <span class="ml-2">Score Settings</span>
+          </button>
+
+          <!-- Districts -->
+          <button onclick=""
+            class="inline-flex items-center hover:text-blue-800 hover:bg-amber-400 rounded-md font-semibold uppercase px-3 py-2 text-sm bg-transparent transition-colors duration-300 hover:border-blue-800/30">
+            <!-- icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current" width="24px" height="24px"
+              viewBox="0 0 24 24">
+              <path
+                d="M23.961 8.429c-.831.982-1.614 1.918-1.961 3.775v6.683l-4 2.479v-9.161c-.347-1.857-1.13-2.793-1.961-3.775-.908-1.075-2.039-2.411-2.039-4.629l.019-.345-2.019-1.456-5.545 4-6.455-4v18l6.455 4 5.545-4 5.545 4 6.455-4v-11.618l-.039.047zm-12.961 9.826l-4 2.885v-13.067l4-2.886v13.068zm9-18.255c-2.1 0-4 1.702-4 3.801 0 3.121 3.188 3.451 4 8.199.812-4.748 4-5.078 4-8.199 0-2.099-1.9-3.801-4-3.801zm0 5.5c-.828 0-1.5-.671-1.5-1.5s.672-1.5 1.5-1.5 1.5.671 1.5 1.5-.672 1.5-1.5 1.5z" />
+            </svg>
+            <!-- text -->
+            <span class="ml-2">Districts</span>
+          </button>
+
+          <!-- Reports -->
+          <button onclick=""
+            class="inline-flex items-center hover:text-blue-800 hover:bg-amber-400 rounded-md font-semibold uppercase px-3 py-2 text-sm bg-transparent transition-colors duration-300 hover:border-blue-800/30">
+            <!-- icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current" width="24px" height="24px"
+              viewBox="0 0 24 24">
+              <path d="M5 19h-4v-8h4v8zm6 0h-4v-18h4v18zm6 0h-4v-12h4v12zm6 0h-4v-4h4v4zm1 2h-24v2h24v-2z" />
+            </svg>
+            <!-- text -->
+            <span class="ml-2">Reports</span>
+          </button>
+
+          <!-- Users -->
+          <button onclick=""
+            class="inline-flex items-center hover:text-blue-800 hover:bg-amber-400 rounded-md font-semibold uppercase px-3 py-2 text-sm bg-transparent transition-colors duration-300 hover:border-blue-800/30">
+            <!-- icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current" width="24px" height="24px"
+              viewBox="0 0 24 24">
+              <path
+                d="M17.997 18h-11.995l-.002-.623c0-1.259.1-1.986 1.588-2.33 1.684-.389 3.344-.736 2.545-2.209-2.366-4.363-.674-6.838 1.866-6.838 2.491 0 4.226 2.383 1.866 6.839-.775 1.464.826 1.812 2.545 2.209 1.49.344 1.589 1.072 1.589 2.333l-.002.619zm4.811-2.214c-1.29-.298-2.49-.559-1.909-1.657 1.769-3.342.469-5.129-1.4-5.129-1.265 0-2.248.817-2.248 2.324 0 3.903 2.268 1.77 2.246 6.676h4.501l.002-.463c0-.946-.074-1.493-1.192-1.751zm-22.806 2.214h4.501c-.021-4.906 2.246-2.772 2.246-6.676 0-1.507-.983-2.324-2.248-2.324-1.869 0-3.169 1.787-1.399 5.129.581 1.099-.619 1.359-1.909 1.657-1.119.258-1.193.805-1.193 1.751l.002.463z" />
+            </svg>
+            <!-- text -->
+            <span class="ml-2">Users</span>
+          </button>
+
+          <!-- user menu -->
+          <button type="button" class="max-w-xs bg-amber-400 p-2 rounded-full flex items-center text-sm focus:outline-none focus:ring-2
+            focus:ring-offset-2 text-blue-800 focus:ring-offset-blue-100 focus:ring-blue-800" id="user-menu-button"
+            aria-expanded="false" aria-haspopup="true" onclick="goToProfile()">
+            <span class="sr-only">User Menu</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current" width="24px" height="24px"
+              viewBox="0 0 24 24">
+              <path
+                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm7.753 18.305c-.261-.586-.789-.991-1.871-1.241-2.293-.529-4.428-.993-3.393-2.945 3.145-5.942.833-9.119-2.489-9.119-3.388 0-5.644 3.299-2.489 9.119 1.066 1.964-1.148 2.427-3.393 2.945-1.084.25-1.608.658-1.867 1.246-1.405-1.723-2.251-3.919-2.251-6.31 0-5.514 4.486-10 10-10s10 4.486 10 10c0 2.389-.845 4.583-2.247 6.305z" />
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <!-- main -->
+      <main class="p-10 space-y-10">
+
+        <!-- page title -->
+        <h2
+          class="text-5xl font-spartan text-center underline tracking-tight font-extrabold text-blue-800 sm:text-5xl md:text-6xl">
+          Facilities
+        </h2>
+
+        <!-- FAcilities Section -->
+        <div class="space-y-5">
+
+          <div class="justify-between flex ">
+            <!-- Put Buttons here -->
+            <div class="inline-flex space-x-2">
+              <!-- Print -->
+              <button onclick="" class="inline-flex items-center border-2 border-red-600 bg-red-600/20 text-red-600
+              hover:bg-red-600 hover:border-red-600/30 hover:text-white rounded-md font-semibold uppercase px-3 py-2
+              text-sm
+              transition-colors
+              duration-300 ">
+                <!-- icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current" width="24" height="24"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M12.819 14.427c.064.267.077.679-.021.948-.128.351-.381.528-.754.528h-.637v-2.12h.496c.474 0 .803.173.916.644zm3.091-8.65c2.047-.479 4.805.279 6.09 1.179-1.494-1.997-5.23-5.708-7.432-6.882 1.157 1.168 1.563 4.235 1.342 5.703zm-7.457 7.955h-.546v.943h.546c.235 0 .467-.027.576-.227.067-.123.067-.366 0-.489-.109-.198-.341-.227-.576-.227zm13.547-2.732v13h-20v-24h8.409c4.858 0 3.334 8 3.334 8 3.011-.745 8.257-.42 8.257 3zm-12.108 2.761c-.16-.484-.606-.761-1.224-.761h-1.668v3.686h.907v-1.277h.761c.619 0 1.064-.277 1.224-.763.094-.292.094-.597 0-.885zm3.407-.303c-.297-.299-.711-.458-1.199-.458h-1.599v3.686h1.599c.537 0 .961-.181 1.262-.535.554-.659.586-2.035-.063-2.693zm3.701-.458h-2.628v3.686h.907v-1.472h1.49v-.732h-1.49v-.698h1.721v-.784z" />
+                </svg>
+
+                <!-- text -->
+                <span class="ml-2">Export PDF</span>
+              </button>
+
+              <!-- Print -->
+              <button onclick="" class="inline-flex items-center border-2 border-green-700 bg-green-700/20 text-green-700
+              hover:bg-green-700 hover:border-green-700/30 hover:text-white rounded-md font-semibold uppercase px-3 py-2
+              text-sm
+              transition-colors
+              duration-300 ">
+                <!-- icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current" width="16" height="16"
+                  fill="currentColor" class="bi bi-file-earmark-spreadsheet-fill" viewBox="0 0 16 16">
+                  <path d="M6 12v-2h3v2H6z" />
+                  <path
+                    d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM3 9h10v1h-3v2h3v1h-3v2H9v-2H6v2H5v-2H3v-1h2v-2H3V9z" />
+                </svg>
+
+                <!-- text -->
+                <span class="ml-2">Export EXCEL</span>
+              </button>
+              <!-- Print -->
+
+              <button onclick="" class="inline-flex items-center border-2 border-blue-800 bg-blue-800/20 text-blue-800
+              hover:bg-blue-800 hover:border-blue-800/30 hover:text-white rounded-md font-semibold uppercase px-3 py-2
+              text-sm
+              transition-colors
+              duration-300 ">
+                <!-- icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current" width="24" height="24"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M16 17h-8v-1h8v1zm8-12v13h-4.048c-.404 2.423-3.486 6-6.434 6h-9.518v-6h-4v-13h4v-5h16v5h4zm-18 0h12v-3h-12v3zm12 9h-12v8h6.691c3.469 0 2-3.352 2-3.352s3.309 1.594 3.309-2v-2.648zm4-7h-20v9h2v-4h16v4h2v-9zm-9 11h-5v1h5v-1zm7.5-10c-.276 0-.5.224-.5.5s.224.5.5.5.5-.224.5-.5-.224-.5-.5-.5z" />
+                </svg>
+
+                <!-- text -->
+                <span class="ml-2">Print Document</span>
+              </button>
+
+            </div>
+
+            <!-- Search -->
+            <!-- search field with an icon -->
+            <div class="inline-flex items-center justify-end">
+              <div class="max-w-xs bg-blue-800 p-2 rounded-md flex items-center" id="search" aria-expanded="false"
+                aria-haspopup="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-white  " width="24" height="24"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M13 8h-8v-1h8v1zm0 2h-8v-1h8v1zm-3 2h-5v-1h5v1zm11.172 12l-7.387-7.387c-1.388.874-3.024 1.387-4.785 1.387-4.971 0-9-4.029-9-9s4.029-9 9-9 9 4.029 9 9c0 1.761-.514 3.398-1.387 4.785l7.387 7.387-2.828 2.828zm-12.172-8c3.859 0 7-3.14 7-7s-3.141-7-7-7-7 3.14-7 7 3.141 7 7 7z" />
+                </svg>
+              </div>
+
+              <input type="text" name="teacherid" placeholder="Search Anything by Name, Type, Grade" class="text-blue-800 mt-1 ml-1  w-full px-3 py-2 bg-white border-2 border-blue-800 rounded-md text-sm shadow-sm
+                  placeholder-blue-800/50 focus:outline-none focus:border-black focus:ring-1 focus:ring-black" />
+
+            </div>
+
+          </div>
+
+
+
+
+          <!-- CReate new facility button -->
+          <a href="add_assignment.html" class="flex items-center justify-center w-full rounded-md uppercase text-sm font-semibold pl-2 pr-3 py-2
+            shadow-sm hover:text-white
+            hover:bg-blue-800 text-blue-800 bg-amber-400 hover:no-underline  px-5 transition-colors duration-300">
+            <svg width="20" height="20" fill="currentColor" class="mr-2" aria-hidden="true">
+              <path
+                d="M10 5a1 1 0 0 1 1 1v3h3a1 1 0 1 1 0 2h-3v3a1 1 0 1 1-2 0v-3H6a1 1 0 1 1 0-2h3V6a1 1 0 0 1 1-1Z" />
+            </svg>
+            Create New Facility
+          </a>
+
+
+          <!-- Table -->
+          <div class="flex flex-col">
+            <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+              <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+                <div class="shadow overflow-hidden border-b border-blue/40 sm:rounded-lg">
+                  <table class="min-w-full divide-y divide-blue text-blue">
+                    <!-- table header -->
+                    <thead class="bg-blue-800 text-white">
+                      <tr>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider">
+                          ID
+                        </th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider">
+                          NAME
+                        </th>
+                        <th class="px-6 py-3 text-center text-xs font-medium text-white uppercase tracking-wider">
+                          TYPE
+                        </th>
+                        <th class="px-6 py-3 text-center text-xs font-medium text-white uppercase tracking-wider">
+                          DISTRICT
+                        </th>
+                        <th class="px-6 py-3 text-center text-xs font-medium text-white uppercase tracking-wider">
+                          GRADE
+                        </th>
+                        <th class="px-6 py-3 text-center text-xs font-medium text-white uppercase tracking-wider">
+                          DATE GRADED
+                        </th>
+                        <th class="px-6 py-3 text-center text-xs font-medium text-white uppercase tracking-wider">
+                          EXPIRY DATE
+                        </th>
+                        <th class="px-6 py-3 text-center text-xs font-medium text-white uppercase tracking-wider">
+                          TIME LEFT
+                        </th>
+
+                      </tr>
+                    </thead>
+                    <!-- Table Body -->
+                    <tbody class="bg-white divide-y divide-blue-800/40">
+                      <!-- 1 -->
+                      <tr class="text-blue-800">
+                        <td class="px-6 py-4">
+                          <p class="text-sm font-bold text-left ">
+                            1.
+                          </p>
+                        </td>
+                        <td
+                          class="px-6 py-4 whitespace-nowrap hover:underline  hover:cursor-pointer text-left text-red font-semibold text-sm">
+
+                          <a href="" class="hover:underline  hover:cursor-pointer">NEW JERUZALEM HOTEL</a>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-center text-red font-semibold text-sm">
+                          LODGES
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-center text-red font-semibold text-sm">
+                          KYENJOJO
+                        </td>
+                        <td class="px-6 py-4 justify-center items-center text-center whitespace-nowrap">
+                          <span class="px-2 inline-flex text-xs leading-5  rounded-full bg-red-200 text-red-500">
+                            Ungraded
+                          </span>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-center font-semibold text-sm text-green-600">
+                          2022-02-01
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-center font-semibold text-sm text-red-600">
+                          2022-02-01
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-center text-red font-semibold text-sm">
+                          90 days
+                        </td>
+                      </tr>
+
+
+                      <!-- 2 -->
+                      <tr class="text-blue-800">
+                        <td class="px-6 py-4">
+                          <p class="text-sm font-bold text-left ">
+                            2.
+                          </p>
+                        </td>
+                        <td
+                          class="px-6 py-4 whitespace-nowrap hover:underline  hover:cursor-pointer text-left text-red font-semibold text-sm">
+
+                          <a href="" class="hover:underline  hover:cursor-pointer"> AGIP MOTEL</a>
+
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-center text-red font-semibold text-sm">
+                          MOTEL
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-center text-red font-semibold text-sm">
+                          ARUA
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                          <span
+                            class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-900">
+                            5 star
+                          </span>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-center font-semibold text-sm text-green-600">
+                          2022-02-01
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-center font-semibold text-sm text-red-600">
+                          2024-12-01
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-center text-red font-semibold text-sm">
+                          90 days
+                        </td>
+                      </tr>
+
+
+
+                      <!-- 3 -->
+                      <tr class="text-blue-800">
+                        <td class="px-6 py-4">
+                          <p class="text-sm font-bold text-left ">
+                            3.
+                          </p>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap  text-left text-red font-semibold text-sm">
+
+
+                          <a href="" class="hover:underline  hover:cursor-pointer"> BIG TIME HOTEL</a>
+
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-center text-red font-semibold text-sm">
+                          HOTEL
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-center text-red font-semibold text-sm">
+                          KAMPALA
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                          <span
+                            class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-900">
+                            3 star
+                          </span>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-center font-semibold text-sm text-green-600">
+                          2022-02-01
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-center font-semibold text-sm text-red-600">
+                          2023-12-01
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-center text-red font-semibold text-sm">
+                          70 days
+                        </td>
+                      </tr>
+
+                      <!-- 4 -->
+                      <tr class="text-blue-800">
+                        <td class="px-6 py-4">
+                          <p class="text-sm font-bold text-left ">
+                            4.
+                          </p>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap  text-left text-red font-semibold text-sm">
+
+
+                          <a href="" class="hover:underline  hover:cursor-pointer"> KALYA COURTS HOTEL</a>
+
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-center text-red font-semibold text-sm">
+                          HOTEL
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-center text-red font-semibold text-sm">
+                          FORT-PORTAL
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                          <span
+                            class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-900">
+                            2 star
+                          </span>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-center font-semibold text-sm text-green-600">
+                          2022-02-01
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-center font-semibold text-sm text-red-600">
+                          2023-12-01
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-center text-red font-semibold text-sm">
+                          60 days
+                        </td>
+                      </tr>
+
+                      <!-- 5 -->
+                      <tr class="text-blue-800">
+                        <td class="px-6 py-4">
+                          <p class="text-sm font-bold text-left ">
+                            5.
+                          </p>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap  text-left text-red font-semibold text-sm">
+
+
+                          <a href="" class="hover:underline  hover:cursor-pointer"> X HEIGHTS </a>
+
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-red font-semibold text-sm">
+                          APARTMENT
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-red font-semibold text-sm">
+                          FORT-PORTAL
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                          <span
+                            class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-900">
+                            1 star
+                          </span>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-center font-semibold text-sm text-green-600">
+                          2022-02-01
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-center font-semibold text-sm text-red-600">
+                          2023-12-01
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-center text-red font-semibold text-sm">
+                          60 days
+                        </td>
+                      </tr>
+
+                      <!-- 6 -->
+                      <tr class="text-blue-800">
+                        <td class="px-6 py-4">
+                          <p class="text-sm font-bold text-left ">
+                            6.
+                          </p>
+                        </td>
+                        <td
+                          class="px-6 py-4 whitespace-nowrap hover:underline  hover:cursor-pointer text-left text-red font-semibold text-sm">
+
+                          <a href="" class="hover:underline  hover:cursor-pointer"> AGIP MOTEL</a>
+
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-center text-red font-semibold text-sm">
+                          MOTEL
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-center text-red font-semibold text-sm">
+                          ARUA
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                          <span
+                            class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-900">
+                            4 star
+                          </span>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-center font-semibold text-sm text-green-600">
+                          2022-02-01
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-center font-semibold text-sm text-red-600">
+                          2024-12-01
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-center text-red font-semibold text-sm">
+                          90 days
+                        </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end table -->
+
+        </div>
+
+
+
+
+      </main>
+      <!-- end main -->
+
+
+      <!-- Footer -->
+      <footer
+        class="mt-10 w-full font-lato bg-blue-800 max-w-container mx-auto py-6 text-center space-y-2 items-center justify-center text-sm ">
+        <p class="text-white font-semibold">
+          &copy; 2022 - UTB E-GRADING SYSTEM | All rights Reserved
+        </p>
+      </footer>
+      <!--end footer -->
+
+    </section>
+  </body>
+
+</html>

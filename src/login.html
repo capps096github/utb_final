@@ -1,1 +1,130 @@
-<!-- Start here by copying and pasting the code from pas pprofitsssss -->
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title -->
+    <title>UTB E-Grading System | Login</title>
+    <!-- CSS -->
+    <link href="../../dist/output.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="utb.js"></script>
+  </head>
+
+  <body class="bg-blue-100 font-spartan">
+    <section class="flex flex-col justify-between h-screen space-y-10">
+      <!-- Main Content -->
+      <main class="mx-auto sm:max-w-4xl max-w-4xl px-4 sm:mt-5 sm:px-6 md:mt-8 lg:mt-10 lg:px-8 xl:mt-14">
+        <div
+          class="sm:text-center text-center items-center transition-colors duration-500 text-blue-800 hover:text-blue-700">
+          <!-- Center Logo -->
+          <div onclick="goToSplash()" title="The UTB E-Grading System"
+            class="hover:cursor-pointer flex justify-center items-center mt-6 mb-10 text-blue-300 hover:text-blue-800">
+            <img src="../images/utb_noback.png" height="76px" width="138px" alt="logo" />
+
+          </div>
+
+          <p class="text-2xl tracking-tight font-extrabold">
+            Good to see you back :)
+          </p>
+
+          <h2 class="text-3xl tracking-tight mt-4 font-extrabold sm:text-4xl md:text-5xl mx-auto">
+            Enter your account details to Login
+          </h2>
+
+        </div>
+
+        <!-- Form div -->
+        <div class="mt-10 justify-center items-center font-lato">
+          <div class="max-w-xl mx-auto">
+            <form class="space-y-6">
+
+
+              <!-- Email Adress -->
+              <label class="block mt-4">
+                <span class="block text-sm font-medium text-blue-800">Email Adress</span>
+
+                <input type="email" placeholder="Your Email Adress e.g utb@admin.gov" class="text-blue-800 mt-1 w-full px-3 py-2 bg-white border border-blue-700 rounded-md text-sm
+                  shadow-sm placeholder-gray-400 focus:outline-none focus:border-blue-700 focus:ring-1
+                  focus:ring-blue-800" required />
+              </label>
+
+              <!-- Password -->
+              <label class="block mt-4">
+                <span class="block text-sm font-medium text-blue-800">Password</span>
+                <input type="password" name="password" id="password"
+                  placeholder="Your Password - Keep it Secure and Secret" class="text-blue-800 mt-1 w-full px-3 py-2
+                  bg-white border border-blue-700 rounded-md text-sm
+                  shadow-sm placeholder-gray-400 focus:outline-none focus:border-blue-700 focus:ring-1
+                  focus:ring-blue-800" required />
+              </label>
+
+
+
+              <div class="flex items-center justify-between">
+
+
+                <!-- show -->
+                <div class="flex items-center">
+                  <input id="show-me" name="show-me" type="checkbox" onclick="togglePassword()"
+                    class="h-4 w-4 text-blue-800 focus:ring-blue-800 border-blue-800 rounded" />
+                  <label for="show-me" class="ml-2 block text-sm text-blue-800 ">
+                    Show Password
+                  </label>
+                </div>
+
+                <div>
+                  <a href="forgot_password.html" class="
+                      hover:font-bold
+                      text-xs
+                      text-blue-800
+                      hover:text-blue-700 hover:underline
+                      transition-colors
+                    " title="Forgot Password">
+                    Forgot your password?
+                  </a>
+                </div>
+              </div>
+
+              <!-- Remember -->
+              <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                  <input id="remember-me" name="remember-me" type="checkbox"
+                    class="h-4 w-4 text-blue-800 focus:ring-blue-800 border-blue-800 rounded" />
+                  <label for="remember-me" class="ml-2 block text-sm text-blue-800 ">
+                    Remember me always
+                  </label>
+                </div>
+              </div>
+
+              <!-- Login Button -->
+              <button type="submit" onclick="goToHome()"
+                class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-bold rounded-md text-white bg-blue-800 hover:bg-blue-600 transition-colors duration-300">
+
+                Login
+              </button>
+
+          
+
+              <!-- end -->
+            </form>
+          </div>
+        </div>
+      </main>
+      <!-- Footer -->
+      <footer
+        class="mt-10 w-full font-lato bg-transparent max-w-container mx-auto py-6 text-center space-y-2 items-center justify-center text-sm ">
+        <p class="text-blue-800 font-semibold">
+          &copy; 2022 - UTB E-GRADING SYSTEM | All rights Reserved
+        </p>
+      </footer>
+      <!--end footer -->
+
+    </section>
+  </body>
+
+</html>

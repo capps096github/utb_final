@@ -27,3 +27,9 @@ function goToEstablishmentType() {
 function goToUsers() {
   location.href = "users.html";
 }
+
+
+// * Go to Users
+function goToLogin() {
+  location.href = "login.html";
+}

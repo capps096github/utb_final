@@ -8,6 +8,13 @@ function goToHome() {
   location.href = "home.html";
 }
 
+// * Go to Home after Splash
+function goToHomeFromSplash() {
+  setTimeout(function () {
+    location.href = "home.html";
+  }, 1000);
+}
+
 // * Go to Facilities
 function goToFacilities() {
   location.href = "facilities.html";
@@ -33,3 +40,15 @@ function goToUsers() {
 function goToLogin() {
   location.href = "login.html";
 }
+
+// THis toggles to show or hide the password
+function togglePassword() {
+    const passwordField = document.getElementById("password");
+    //if its password change it to text and vice versa
+    if (passwordField.type === "password") {
+        passwordField.type = "text";
+    } else {
+        passwordField.type = "password";
+    }
+}
+
